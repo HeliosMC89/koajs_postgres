@@ -1,0 +1,38 @@
+{
+  "name": "koajsrest",
+  "version": "1.0.0",
+  "description": "Api Rest con koajs, typescript and postgres",
+  "main": "server.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\_mocha test\\*.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeliosMC89/koajs_postgres.git"
+  },
+  "keywords": [
+    "Koajs",
+    "Postgres",
+    "Typescript"
+  ],
+  "author": "Heliodoro Morales Cabrera aka Helios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeliosMC89/koajs_postgres/issues"
+  },
+  "homepage": "https://github.com/HeliosMC89/koajs_postgres#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.1.1"
+  },
+  "dependencies": {
+    "knex": "^0.15.2",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "pg": "^7.6.1"
+  }
+}
