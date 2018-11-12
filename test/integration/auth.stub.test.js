@@ -18,31 +18,31 @@ describe.only('routes : auth - stubbed', () => {
         this.authenticate.restore();
     });
     describe.only('POST /auth/register', () => {
-    beforeEach(() => {
-        const user = [
-        {
-            id: 1,
-            username: 'michael',
-            password: 'something'
-        }
-        ];
-        this.query = sinon.stub(queries, 'addUser').resolves(user);
-    });
-    afterEach(() => {
-        this.query.restore();
-    });
-    it('should register a new user', (done) => {
-        chai.request(server)
-        .post('/auth/register')
-        .send({
-        username: 'michael',
-        password: 'herman'
-        })
-        .end((err, res) => {
-        res.redirects[0].should.contain('/auth/status');
-        done();
+        beforeEach(() => {
+            const user = [
+            {
+                id: 1,
+                username: 'michael',
+                password: 'something'
+            }
+            ];
+            this.query = sinon.stub(queries, 'addUser').resolves(user);
         });
-    });
+        afterEach(() => {
+            this.query.restore();
+        });
+        it('should register a new user', (done) => {
+            chai.request(server)
+            .post('/auth/register')
+            .send({
+            username: 'michael',
+            password: 'herman'
+            })
+            .end((err, res) => {
+                res.redirects[0].should.contain('/auth/status');
+                done();
+            });
+        });
     });
 
 });
