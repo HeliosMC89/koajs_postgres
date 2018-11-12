@@ -4,7 +4,7 @@
   "description": "Api Rest con koajs, typescript and postgres",
   "main": "server.js",
   "scripts": {
-    "test": "node_modules\\.bin\\_mocha test\\**\\*.js",
+    "test": "node_modules\\.bin\\_mocha test\\*.js",
     "start": "node server.js"
   },
   "repository": {
@@ -26,20 +26,13 @@
     "chai": "^4.2.0",
     "chai-http": "^4.2.0",
     "mocha": "^5.2.0",
-    "request": "^2.88.0",
     "sinon": "^7.1.1"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "knex": "^0.15.2",
     "koa": "^2.6.1",
     "koa-bodyparser": "^4.2.1",
-    "koa-morgan": "^1.0.1",
-    "koa-passport": "^4.1.1",
-    "koa-redis": "^3.1.3",
     "koa-router": "^7.4.0",
-    "koa-session": "^5.10.0",
-    "passport-local": "^1.0.0",
     "pg": "^7.6.1"
   }
 }
