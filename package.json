@@ -4,7 +4,7 @@
   "description": "Api Rest con koajs, typescript and postgres",
   "main": "server.js",
   "scripts": {
-    "test": "node_modules\\.bin\\_mocha test\\*.js",
+    "test": "node_modules\\.bin\\_mocha test\\**\\*.js",
     "start": "node server.js"
   },
   "repository": {

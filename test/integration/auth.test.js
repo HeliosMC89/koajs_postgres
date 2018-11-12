@@ -5,8 +5,8 @@ const should = chai.should();
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
-const server = require('../server');
-const knex = require('../database/connections');
+const server = require('../../server');
+const knex = require('../../database/connections');
 
 describe('routes : auth', () => {
 

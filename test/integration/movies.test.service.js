@@ -5,7 +5,7 @@ const request = require('request');
 const chai = require('chai');
 const should = chai.should();
 
-const movies = require('./fixtures/movies.json');
+const movies = require('../fixtures/movies.json');
 
 const base = 'http://localhost:1337';
 
